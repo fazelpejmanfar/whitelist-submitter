@@ -2,6 +2,9 @@
   "name": "whitelist-submitter",
   "version": "0.1.0",
   "private": true,
+  "author": {"name": "FazelPejmafnar"},
+  "license": "MIT",
+  "description": "Whitelist Submitter using NextJS and Sanity",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

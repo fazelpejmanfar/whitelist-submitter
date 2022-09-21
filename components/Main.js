@@ -2,12 +2,11 @@ import React from 'react'
 import { useContext, useState } from 'react'
 import toast from 'react-hot-toast';
 import { EthersContext } from '../context/Connector'
-import { sanity, client } from '../lib/sanity'
+import { AddAddress, client } from '../lib/sanity'
 
 function Main() {
     const Eth = useContext(EthersContext);
     const [res, setres] = useState('');
-
     const SignMessage = async() => {
         const balance = await Eth.Provider.getBalance(Eth.address);
         console.log()
@@ -20,7 +19,7 @@ function Main() {
                 setres(res);
                 toast.dismiss()
                 toast.success("Wallet Submitted");
-                sanity(Eth.address);
+                AddAddress(Eth.address);
             })
         } catch (e) {
             toast.dismiss()
