@@ -5,8 +5,9 @@ export default {
   fields: [
     {
       name: 'address',
-      type: 'string',
-      title: 'Address'
+      title: 'Address',
+      type: 'array',
+      of: [{type: 'string'}]
     }
   ]
 }

@@ -11,7 +11,7 @@ export default function Home() {
 
   
   return (
-    <div className='flex flex-col w-full min-h-screen justify-center items-center bg-[#326789]'>
+    <div className='flex flex-col w-full min-h-screen justify-center items-center bg-[url("/bg.png")] bg-center bg-cover'>
       <Head>
         <title>Whitelist Submitter</title>
         <meta name="description" content="Submit Your Address for WL" />
