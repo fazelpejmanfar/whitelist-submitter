@@ -21,10 +21,10 @@ function Main() {
                 toast.dismiss()
                 toast.success("Wallet Submitted");
             })
-        } catch (e) {
+        } catch (err) {
             toast.dismiss()
             console.log(e)
-            toast.error("User Denied");
+            toast.error(err);
         }
     } else {
         toast.dismiss()

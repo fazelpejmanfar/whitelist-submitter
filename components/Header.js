@@ -7,7 +7,7 @@ function Header() {
   return (
     <div className='w-full h-20 flex justify-between items-center p-5 absolute top-0 border-b-2'>
     <h1>
-    Whitelist Submitter
+    Whitelist Submitter (Goerli)
     </h1>
 
     <button onClick={(e) => {
